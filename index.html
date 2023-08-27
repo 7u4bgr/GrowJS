@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GrowTree</title>
+</head>
+
+<body>
+    <script>
+
+        let background = document.createElement("div")
+        background.classList.add("background")
+        let button1 = document.createElement("button")
+        button1.classList.add("button1")
+        background.appendChild(button1)
+        button1.addEventListener("click", (event) => {
+            let photo = document.createElement("div")
+            photo.classList.add("photo")
+            background.appendChild(photo)
+        })
+        let button2 = document.createElement("button")
+        button2.classList.add("button2")
+        background.appendChild(button2)
+        button2.addEventListener("dblclick",(event)=>{
+            let photo1 = document.createElement("div")
+            photo1.classList.add("photo1")
+            background.appendChild(photo1)
+
+        })
+
+
+        document.body.appendChild(background)
+    </script>
+</body>
+
+</html>
